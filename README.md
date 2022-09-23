@@ -1,2 +1,2 @@
 # github-finder
-find github users by a simple search
+an application to find GitHub Users using GitHub API
