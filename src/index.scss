@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    svg {
+        animation: spin 2s linear infinite;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0d1117;
+    color: #ffffffb3;
+    font-family: 'Lato', sans-serif;
+}
+
+.layout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation {
+    background-color: #161b22;
+
+    .menu {
+        a {
+            color: rgb(121, 121, 121);
+            text-decoration: none;
+
+            &:hover {
+                background-color: gray;
+                border-radius: 3px;
+                color: white;
+            }
+        }
+
+        .active {
+            color: white;
+        }
+    }
+
+    .socials {
+        >* {
+            color: #ffffffb3;
+        }
+    }
+}
+
+.search {
+
+    .search-bar {
+        margin: auto;
+        position: relative;
+    }
+
+    input.finder {
+        background-color: rgb(204, 204, 204);
+        // width: 30%;
+        padding: 1rem 8rem 1rem 2rem;
+        border: 3px solid #161b22;
+        border-radius: 7px;
+        font-size: 1.5rem;
+
+        &:focus-visible {
+            border: 3px solid white;
+            outline: none;
+        }
+
+        &::placeholder {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+    }
+
+    button.search-button {
+        margin-left: -6.8rem;
+        position: absolute;
+        background-color: black;
+        color: white;
+        height: 3rem;
+        font-weight: bold;
+        height: 3.2rem;
+        width: 6rem;
+        font-size: 1.5rem;
+        font-style: italic;
+        border: 0;
+        border-radius: 7px;
+        top: 10px;
+    }
+}
+
+.profile-picture {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #0d1117;
+    border: 1px solid rgb(3, 1, 11);
+}
+
+.view-btn {
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.button-text {
+    color: rgb(170, 170, 170);
+
+    &:hover {
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.full-image {
+    height: 250px;
+    width: 250px;
+}
+
+.profile{
+    position: relative;
+    div{
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+    }
+}
+
+.hover{
+    &:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+}
